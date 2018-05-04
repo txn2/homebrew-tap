@@ -1,9 +1,9 @@
 class Dmk < Formula
   desc "Declarative data migration in yaml (with embedded javascript support.)"
   homepage "https://github.com/txn2/dmk"
-  url "https://github.com/txn2/dmk/releases/download/v1.0.0/dmk_macOS_amd64.tar.gz"
-  version "1.0.0"
-  sha256 "5ee7ebfdf5fcd84cef3d22b77a49f7934db7cb06ae8b40827e22d2b740a21fe5"
+  url "https://github.com/txn2/dmk/releases/download/v1.0.1/dmk_macOS_amd64.tar.gz"
+  version "1.0.1"
+  sha256 "34afebef3bd7a5f8022112192cd0dcf1d00ac1dee347ae365b6d627b590caaec"
 
   def install
     bin.install "dmk"
