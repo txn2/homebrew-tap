@@ -1,9 +1,9 @@
 class N2proxy < Formula
   desc "Contraband filtering reverse proxy."
   homepage "https://github.com/txn2/n2proxy"
-  url "https://github.com/txn2/n2proxy/releases/download/v1.0.6/n2proxy_macOS_amd64.tar.gz"
-  version "1.0.6"
-  sha256 "be4366185794431f92d52facd713d9efc2e87d2c81931047734a53abd247713b"
+  url "https://github.com/txn2/n2proxy/releases/download/v1.0.7/n2proxy_macOS_amd64.tar.gz"
+  version "1.0.7"
+  sha256 "4cab92347c189011142b78332f5d361f5eadbb79a36825958c261fbf02ea71f0"
 
   def install
     bin.install "n2proxy"
