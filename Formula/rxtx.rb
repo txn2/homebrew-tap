@@ -1,11 +1,11 @@
 class Rxtx < Formula
-  desc "Data queuing and transmission."
-  homepage "https://github.com/txn2/rxtx"
-  url "https://github.com/txn2/rxtx/releases/download/v1.2.0/rxtx_darwin_amd64.tar.gz"
-  version "1.2.0"
-  sha256 "507c5ac415447a8fb8e172b4f8cbf07fd6fb11fa4047615e15e73479eab63a71"
+  desc "Elastic Beat for rxtx."
+  homepage "https://github.com/txn2/rtbeat"
+  url "https://github.com/txn2/rtbeat/releases/download/v1.0.4/rtbeat_darwin_amd64.tar.gz"
+  version "1.0.4"
+  sha256 "d1662a4ebb00ebee9396b56213f43f8de6ac1503d87c45c5bfec43e1ea996dd1"
 
   def install
-    bin.install "rxtx"
+    bin.install "rtbeat"
   end
 end
