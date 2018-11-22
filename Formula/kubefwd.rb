@@ -1,12 +1,12 @@
 class Kubefwd < Formula
-  desc "Metrics scraper and muxer."
-  homepage "https://github.com/txn2/xn2"
-  url "https://github.com/txn2/xn2/releases/download/v1.0.2/xn2_macOS_amd64.tar.gz"
-  version "1.0.2"
-  sha256 "3193889dfcfbb611a63df8ab36e62e901edc10342a3158e849c70dddbf94f101"
+  desc "Kubernetes bulk port forwarding utility."
+  homepage "https://github.com/txn2/kubefwd"
+  url "https://github.com/txn2/kubefwd/releases/download/1.4.8/kubefwd_macOS_amd64.tar.gz"
+  version "1.4.8"
+  sha256 "29076e00abeebe5816d6842b9db8be735934efa8421490e1c1b4dcf4dca70c48"
 
   def install
-    bin.install "xn2"
+    bin.install "kubefwd"
   end
 
   test do
