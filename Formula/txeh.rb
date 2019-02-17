@@ -1,9 +1,9 @@
 class Txeh < Formula
   desc "Etc Hosts Management Utility."
   homepage "https://github.com/txn2/txeh"
-  url "https://github.com/txn2/txeh/releases/download/v1.0.2/txeh_macOS_amd64.tar.gz"
-  version "1.0.2"
-  sha256 "5bc6adb61dd56681e39eb4964fe86387e6d423401d10e8fb2e6646cebc9b0e24"
+  url "https://github.com/txn2/txeh/releases/download/v1.1.0/txeh_macOS_amd64.tar.gz"
+  version "1.1.0"
+  sha256 "ca33796913360bc23bebe98a2dae455e279c18e3f6bc9ee91ea72e11a8ff77fd"
 
   def install
     bin.install "txeh"
