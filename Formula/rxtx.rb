@@ -2,9 +2,9 @@
 class Rxtx < Formula
   desc "Data queuing, batching and re-transmission."
   homepage "https://github.com/txn2/rxtx"
-  url "https://github.com/txn2/rxtx/releases/download/v1.5.1/rxtx_darwin_amd64.tar.gz"
-  version "1.5.1"
-  sha256 "a625720d3d1894d7fb51be2ab4ef7b008a979d43e517e11d9d3b675965a2121e"
+  url "https://github.com/txn2/rxtx/releases/download/v1.5.2/rxtx_darwin_amd64.tar.gz"
+  version "1.5.2"
+  sha256 "e2979807f8996b9ab8a4491a0382fbe9e01848d4c64b7373c25b93948a74bc35"
 
   def install
     bin.install "rxtx"
