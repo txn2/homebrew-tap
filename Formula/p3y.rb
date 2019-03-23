@@ -2,9 +2,9 @@
 class P3y < Formula
   desc "Mini reverse proxy with Basic Auth and TLS support."
   homepage "https://github.com/txn2/p3y"
-  url "https://github.com/txn2/p3y/releases/download/0.0.3/p3y_macOS_amd64.tar.gz"
-  version "0.0.3"
-  sha256 "830cda3169c122d224a2da04379802a0bde166526f22a5b2ad4e4a3f156702b3"
+  url "https://github.com/txn2/p3y/releases/download/1.0.0/p3y_macOS_amd64.tar.gz"
+  version "1.0.0"
+  sha256 "44dac131ef6843a6dac67dd9a7230ced4de1a9a8e0233b59eb324ce05ed0271f"
 
   def install
     bin.install "p3y"
