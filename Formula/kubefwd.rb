@@ -2,9 +2,9 @@
 class Kubefwd < Formula
   desc "Kubernetes bulk port forwarding utility."
   homepage "https://github.com/txn2/kubefwd"
-  url "https://github.com/txn2/kubefwd/releases/download/1.7.3/kubefwd_macOS_amd64.tar.gz"
-  version "1.7.3"
-  sha256 "4c8db3ddb161f1cb7588329b69c04f4e3356944bd23c4aa432b50ee718759e7a"
+  url "https://github.com/txn2/kubefwd/releases/download/1.7.4/kubefwd_macOS_amd64.tar.gz"
+  version "1.7.4"
+  sha256 "c1ea0d70362a6fa9625c66c66b96243fdf630a0f00e6934b0aa5e681f78032f2"
 
   def install
     bin.install "kubefwd"
