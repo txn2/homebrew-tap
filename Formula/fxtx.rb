@@ -2,9 +2,9 @@
 class Fxtx < Formula
   desc "Fake data transmission."
   homepage "https://github.com/txn2/fxtx"
-  url "https://github.com/txn2/fxtx/releases/download/v0.1.0/fxtx_macOS_amd64.tar.gz"
-  version "0.1.0"
-  sha256 "6c18971b3b1cecf53cde530cb376b860491268a74ecfb581a9162fb4c8e38d24"
+  url "https://github.com/txn2/fxtx/releases/download/v0.1.1/fxtx_macOS_amd64.tar.gz"
+  version "0.1.1"
+  sha256 "024d052200c3d3b3ff0f6990d94fd2e41302e3e6ad55085c3b5260e4b0812335"
 
   def install
     bin.install "fxtx"
