@@ -2,27 +2,35 @@
 class Kubefwd < Formula
   desc "Kubernetes bulk port forwarding utility."
   homepage "https://github.com/txn2/kubefwd"
-  version "1.14.7"
+  version "1.17.0"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/txn2/kubefwd/releases/download/1.14.7/kubefwd_1.14.7_macOS_x86_64.tar.gz"
-    sha256 "b3ebf290cfa9e6b74bc3b5a015d54d7a9df95b21e0117207e2116f55c43c31ff"
+    url "https://github.com/txn2/kubefwd/releases/download/1.17.0/kubefwd_Darwin_x86_64.tar.gz"
+    sha256 "62a660b2d5f56b14d844b235742e38aa980e0e92ec7a5c1e45d2875f43b8d022"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/txn2/kubefwd/releases/download/1.14.7/kubefwd_1.14.7_linux_x86_64.tar.gz"
-      sha256 "8c5008ea1400597aafe7147ffa965180747fa4663d15574108548a8caf522525"
+      url "https://github.com/txn2/kubefwd/releases/download/1.17.0/kubefwd_Linux_x86_64.tar.gz"
+      sha256 "f18d23a86185d651e00919baf84a9a2355086993d7d1f546ee9763a61ff174d0"
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
+        url "https://github.com/txn2/kubefwd/releases/download/1.17.0/kubefwd_Linux_arm64.tar.gz"
+        sha256 "04439d578eaab96ca0884ff4bd4132132218e708e62c4ad910c1fe5bd116b290"
       else
-        url "https://github.com/txn2/kubefwd/releases/download/1.14.7/kubefwd_1.14.7_linux_arm.tar.gz"
-        sha256 "0cc7f1425fe22470037550a4d0834f35a4a95fe21b1f9045aeab2612e7061f96"
+        url "https://github.com/txn2/kubefwd/releases/download/1.17.0/kubefwd_Linux_armv6.tar.gz"
+        sha256 "5a905be4248032875dcac596b1818402497cba15edbde58e81d837f66e7b1ec7"
       end
     end
   end
+  
+  depends_on "kubectl" => :optional
 
   def install
     bin.install "kubefwd"
+  end
+
+  test do
+    kubefwd version
   end
 end
