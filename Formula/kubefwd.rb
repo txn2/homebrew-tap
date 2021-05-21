@@ -5,24 +5,28 @@
 class Kubefwd < Formula
   desc "Kubernetes bulk port forwarding utility."
   homepage "https://github.com/txn2/kubefwd"
-  version "1.18.0"
+  version "1.19.0"
   bottle :unneeded
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/txn2/kubefwd/releases/download/1.18.0/kubefwd_Darwin_x86_64.tar.gz"
-    sha256 "6f4f9e98cff1ddd26621fb17c58fa5ad3c79036d3500b400142e081612fb903f"
+    url "https://github.com/txn2/kubefwd/releases/download/1.19.0/kubefwd_Darwin_x86_64.tar.gz"
+    sha256 "a2cd0100d8ccf3776532679c864827cc5151df008dd6bbac4e94f59a387abc57"
+  end
+  if OS.mac? && Hardware::CPU.arm?
+    url "https://github.com/txn2/kubefwd/releases/download/1.19.0/kubefwd_Darwin_arm64.tar.gz"
+    sha256 "a720e5349f227f4a175d87be0655eae2131f81425c36f3c07f09d7333b948cb8"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/txn2/kubefwd/releases/download/1.18.0/kubefwd_Linux_x86_64.tar.gz"
-    sha256 "c0426de226feb0148d68ccddb8afb06aa06e708468d399ddc212ba80c3d7505c"
+    url "https://github.com/txn2/kubefwd/releases/download/1.19.0/kubefwd_Linux_x86_64.tar.gz"
+    sha256 "6479dfd4d32aec9299802ffdf721c2a18623b58cef2bc779e19ab16610bfe9c8"
   end
   if OS.linux? && Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-    url "https://github.com/txn2/kubefwd/releases/download/1.18.0/kubefwd_Linux_armv6.tar.gz"
-    sha256 "5ae9c1b4d449a5262aa12b9094fd535f314d1be1cc7f0c28d9982627ea275e6d"
+    url "https://github.com/txn2/kubefwd/releases/download/1.19.0/kubefwd_Linux_armv6.tar.gz"
+    sha256 "2fb1bcb9aba32b918ee8dbaaf0d68f10b22b17527593ab370d2fcc1ae3d3c032"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/txn2/kubefwd/releases/download/1.18.0/kubefwd_Linux_arm64.tar.gz"
-    sha256 "ef0536d0e52dbc28c175f583418ac198851fa4820268c30d62378cb79e343b47"
+    url "https://github.com/txn2/kubefwd/releases/download/1.19.0/kubefwd_Linux_arm64.tar.gz"
+    sha256 "6e2c2bb463d6715c210ec40aa9f3a08b502873d8c1c277d317b99ef9ad977623"
   end
 
   depends_on "kubectl" => :optional
