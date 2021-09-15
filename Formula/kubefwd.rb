@@ -5,32 +5,32 @@
 class Kubefwd < Formula
   desc "Kubernetes bulk port forwarding utility."
   homepage "https://github.com/txn2/kubefwd"
-  version "1.20.0"
+  version "1.21.0"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/txn2/kubefwd/releases/download/1.20.0/kubefwd_Darwin_x86_64.tar.gz"
-      sha256 "70f75ebc37ef33edbec33722bb77adbc44e4f05271207a2b7a176ac2727be0c4"
+      url "https://github.com/txn2/kubefwd/releases/download/1.21.0/kubefwd_Darwin_x86_64.tar.gz"
+      sha256 "b3190e82ff1a411b470782f51e990f609d4facb034195041588d28af71f7a031"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/txn2/kubefwd/releases/download/1.20.0/kubefwd_Darwin_arm64.tar.gz"
-      sha256 "9c8420a300014bde618ae14c7ed0ce81858f90b489918cd581daf028156ab59a"
+      url "https://github.com/txn2/kubefwd/releases/download/1.21.0/kubefwd_Darwin_arm64.tar.gz"
+      sha256 "19566b86532093644c6b86fc12a257abce9f50b8d123c7e8a39b0eb6ac66022f"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/txn2/kubefwd/releases/download/1.20.0/kubefwd_Linux_x86_64.tar.gz"
-      sha256 "b7e69207349e15d0df5243dae933db214daae7cd1a06047ff87d3bd4cc1f3884"
+      url "https://github.com/txn2/kubefwd/releases/download/1.21.0/kubefwd_Linux_x86_64.tar.gz"
+      sha256 "6277f6d79c98af7fefad5a5524c5867c55588392aef699d63e0706640e265948"
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/txn2/kubefwd/releases/download/1.20.0/kubefwd_Linux_armv6.tar.gz"
-      sha256 "f2862d222b8028d8f2bb03f09214386e7bf98ca151418125481813fee2994a08"
+      url "https://github.com/txn2/kubefwd/releases/download/1.21.0/kubefwd_Linux_armv6.tar.gz"
+      sha256 "7ecfb9fbc1eecf38a6c912170246a8f7d66fd06766aba639a8caf1876a17d45c"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/txn2/kubefwd/releases/download/1.20.0/kubefwd_Linux_arm64.tar.gz"
-      sha256 "994c92be87e7bbdeb825197075486363936c81cb4d52542dfe11d319703581d4"
+      url "https://github.com/txn2/kubefwd/releases/download/1.21.0/kubefwd_Linux_arm64.tar.gz"
+      sha256 "a50bfd1c4952c2fbcf6d2e4b5a0b030788a8ba02f885090dd1428319562bea20"
     end
   end
 
