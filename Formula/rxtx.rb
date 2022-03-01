@@ -6,7 +6,6 @@ class Rxtx < Formula
   desc "Data queuing, batching and re-transmission."
   homepage "https://github.com/txn2/rxtx"
   version "2.0.5"
-  bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
