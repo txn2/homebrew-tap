@@ -5,20 +5,20 @@
 class Txeh < Formula
   desc "Etc Hosts Management Utility."
   homepage "https://github.com/txn2/txeh"
-  version "1.5.0"
+  version "1.5.1"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/txn2/txeh/releases/download/1.5.0/txeh_Darwin_arm64.tar.gz"
-      sha256 "353a483c4e5007def25588091342ec9532ae0f83d92877c80d920e91a1851d16"
+      url "https://github.com/txn2/txeh/releases/download/1.5.1/txeh_Darwin_arm64.tar.gz"
+      sha256 "10e9df82a467a8905d0342a819aaa22001e439fe08e3601ea4415b9ce6c2353b"
 
       def install
         bin.install "txeh"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/txn2/txeh/releases/download/1.5.0/txeh_Darwin_x86_64.tar.gz"
-      sha256 "90a8adcc26253b078585484eabd8a0a36c6332417e75b27419a3f2c5eec22ebd"
+      url "https://github.com/txn2/txeh/releases/download/1.5.1/txeh_Darwin_x86_64.tar.gz"
+      sha256 "8a1a66916af6f226ef9d54a83b163fea008f052546673d145123e14dff9921da"
 
       def install
         bin.install "txeh"
@@ -28,24 +28,24 @@ class Txeh < Formula
 
   on_linux do
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/txn2/txeh/releases/download/1.5.0/txeh_Linux_armv6.tar.gz"
-      sha256 "f5c3c1835a300ea21ee9c455ba338c34f1ae364612aa1f31ee1ea2af64b4ecba"
+      url "https://github.com/txn2/txeh/releases/download/1.5.1/txeh_Linux_armv6.tar.gz"
+      sha256 "338444e0839eb5f9eaee0ce449264821fd2390e93c41d0db937a50ae58b5e803"
 
       def install
         bin.install "txeh"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/txn2/txeh/releases/download/1.5.0/txeh_Linux_arm64.tar.gz"
-      sha256 "4130adeda626a3a86cfe907944c2a0645ed2042507c4812fb2f2c9aa0724e6a1"
+      url "https://github.com/txn2/txeh/releases/download/1.5.1/txeh_Linux_arm64.tar.gz"
+      sha256 "048b0d98aab6e83e29d5a96ab18141bf179329053ce0e7ae21d6bc11a9451ae9"
 
       def install
         bin.install "txeh"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/txn2/txeh/releases/download/1.5.0/txeh_Linux_x86_64.tar.gz"
-      sha256 "fc5741a61b3b2264a83444792cad6ac8657fbdb9746892c821365af6d1798de1"
+      url "https://github.com/txn2/txeh/releases/download/1.5.1/txeh_Linux_x86_64.tar.gz"
+      sha256 "bac703854de4584b4b4e1aeb5610f6ee03f29931ddafac5b2d708904866f52e5"
 
       def install
         bin.install "txeh"
