@@ -9,16 +9,16 @@ class Txeh < Formula
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/txn2/txeh/releases/download/1.5.2/txeh_Darwin_arm64.tar.gz"
-      sha256 "c475d5112db655b56fd09e16bcbdab437ede60ce96da8865ece4c2a8d8b354ab"
+      url "https://github.com/txn2/txeh/releases/download/v1.5.2/txeh_Darwin_arm64.tar.gz"
+      sha256 "c1c1dd9ec665e52811106e950d1ea8d0ce40601a7cd151c69efd007c30fe03d9"
 
       def install
         bin.install "txeh"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/txn2/txeh/releases/download/1.5.2/txeh_Darwin_x86_64.tar.gz"
-      sha256 "a911f33c8730f5013add0674ff462eac197629a061a60d44672d9e390209f7f0"
+      url "https://github.com/txn2/txeh/releases/download/v1.5.2/txeh_Darwin_x86_64.tar.gz"
+      sha256 "4151d5bffea9243e19af98e253188fe963683a63275e3937a24e785d47ead6ec"
 
       def install
         bin.install "txeh"
@@ -28,24 +28,24 @@ class Txeh < Formula
 
   on_linux do
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/txn2/txeh/releases/download/1.5.2/txeh_Linux_armv6.tar.gz"
-      sha256 "33ef0ed797ff1a41f031f3031c3145cd156e75577633240c9e75a2e2348f6411"
+      url "https://github.com/txn2/txeh/releases/download/v1.5.2/txeh_Linux_armv6.tar.gz"
+      sha256 "7c7aacb8cdb2b03c17295d5b93d4bf42d431a17a34c78aca8d86318fb5061810"
 
       def install
         bin.install "txeh"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/txn2/txeh/releases/download/1.5.2/txeh_Linux_arm64.tar.gz"
-      sha256 "8c8e5f7e0f452ee7b41d8f5fbf5be8a93ac0159b453200d8775c4fdd68165d61"
+      url "https://github.com/txn2/txeh/releases/download/v1.5.2/txeh_Linux_arm64.tar.gz"
+      sha256 "37fec81db20b4c119968042e751021a790d0adc86a2c0c8b109e39c1eeee0fa6"
 
       def install
         bin.install "txeh"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/txn2/txeh/releases/download/1.5.2/txeh_Linux_x86_64.tar.gz"
-      sha256 "9709eb64aa12a1fbb5d4d160a84bfce7ac55257b2c18e2cd794a58222fb64e5e"
+      url "https://github.com/txn2/txeh/releases/download/v1.5.2/txeh_Linux_x86_64.tar.gz"
+      sha256 "4cddb399a1a567bc3522f3025f7acbd1d9b5c12fd39c0845a604eeb6162a47e3"
 
       def install
         bin.install "txeh"
