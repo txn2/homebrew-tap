@@ -5,35 +5,51 @@
 class Rxtx < Formula
   desc "Data queuing, batching and re-transmission."
   homepage "https://github.com/txn2/rxtx"
-  version "2.0.5"
+  version "2.2.1"
 
   on_macos do
-    if Hardware::CPU.intel?
-      url "https://github.com/txn2/rxtx/releases/download/v2.0.5/rxtx_Darwin_x86_64.tar.gz"
-      sha256 "12be3f650e2b01ab2ecb3c468ee645f2deb4c2a0d9aa160bf1f9cb4a2b24a1f4"
-    end
     if Hardware::CPU.arm?
-      url "https://github.com/txn2/rxtx/releases/download/v2.0.5/rxtx_Darwin_arm64.tar.gz"
-      sha256 "4a96c9d088d2d52b08abd343c39833366427d9985ec53732a83e33f820317b67"
+      url "https://github.com/txn2/rxtx/releases/download/v2.2.1/rxtx_2.2.1_darwin_arm64.tar.gz"
+      sha256 "1149f45e061aab4fa820fdf85508db6462956bbc7546e6ee4728ca45f060ac4b"
+
+      def install
+        bin.install "rxtx"
+      end
+    end
+    if Hardware::CPU.intel?
+      url "https://github.com/txn2/rxtx/releases/download/v2.2.1/rxtx_2.2.1_darwin_amd64.tar.gz"
+      sha256 "46a01e25f19bc353a9a7f62a28e9dace892708eb3166ce3af6832adff90a865b"
+
+      def install
+        bin.install "rxtx"
+      end
     end
   end
 
   on_linux do
-    if Hardware::CPU.intel?
-      url "https://github.com/txn2/rxtx/releases/download/v2.0.5/rxtx_Linux_x86_64.tar.gz"
-      sha256 "abfad7b9554280f9f8a6598eb063b0ba84871f001a1ed6ce4cd4f59597560e35"
-    end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/txn2/rxtx/releases/download/v2.0.5/rxtx_Linux_armv6.tar.gz"
-      sha256 "60cd625fc91e507398b81c714461c40fb1629a8fae63191e0ce7e085cfebc774"
+      url "https://github.com/txn2/rxtx/releases/download/v2.2.1/rxtx_2.2.1_linux_armv6.tar.gz"
+      sha256 "882958083c481503fe469d4e3841638662c46b765b0f34dfd26234204f4fa549"
+
+      def install
+        bin.install "rxtx"
+      end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/txn2/rxtx/releases/download/v2.0.5/rxtx_Linux_arm64.tar.gz"
-      sha256 "ea4179a884a9a9e989dfbc1845e60748f7d60cfe8883039649c7dd8261911380"
-    end
-  end
+      url "https://github.com/txn2/rxtx/releases/download/v2.2.1/rxtx_2.2.1_linux_arm64.tar.gz"
+      sha256 "70052b9a44bda92454cca3f77c3b6b3408060af05a29f5839b31ef646e495409"
 
-  def install
-    bin.install "rxtx"
+      def install
+        bin.install "rxtx"
+      end
+    end
+    if Hardware::CPU.intel?
+      url "https://github.com/txn2/rxtx/releases/download/v2.2.1/rxtx_2.2.1_linux_amd64.tar.gz"
+      sha256 "3cb2924ab53815c930382a2cb632fdac2123c2b9fb753dd18e805486d275393a"
+
+      def install
+        bin.install "rxtx"
+      end
+    end
   end
 end
