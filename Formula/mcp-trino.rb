@@ -11,7 +11,7 @@ class McpTrino < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/txn2/mcp-trino/releases/download/v0.1.1/mcp-trino_0.1.1_darwin_amd64.tar.gz"
-      sha256 "d8dff8f134388dac3644d6cdd794a20784f7935e68cbb55d4c175c1364179930"
+      sha256 "b5f5c77e30d8efa499aa3cfb2e2410f36def272658245538239b1ee28f7c2890"
 
       def install
         bin.install "mcp-trino"
@@ -19,7 +19,7 @@ class McpTrino < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/txn2/mcp-trino/releases/download/v0.1.1/mcp-trino_0.1.1_darwin_arm64.tar.gz"
-      sha256 "b3a5936be9c32d2f7e8f94b7e0b30a9f0c7aeb70447335a6b0898299af258cec"
+      sha256 "30176f57225034bbcca10034647e25f17f6798125cbfe764af4fffcad25b3c4b"
 
       def install
         bin.install "mcp-trino"
@@ -30,14 +30,14 @@ class McpTrino < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/txn2/mcp-trino/releases/download/v0.1.1/mcp-trino_0.1.1_linux_amd64.tar.gz"
-      sha256 "d8d47f3d11c08d22b5468ed7f6d1bec375983614224af79a36b6e5bec73d2baf"
+      sha256 "6db7971c210c940f77437c9e422f7d4605f6a8ceeeeb711f193d15c466a352bb"
       def install
         bin.install "mcp-trino"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/txn2/mcp-trino/releases/download/v0.1.1/mcp-trino_0.1.1_linux_arm64.tar.gz"
-      sha256 "abfaee2be9996040d0b1ac39dbf93590a3d9b0b368c882cd7f7f5835d2f08261"
+      sha256 "f27b2a8df49039c53c06d4978b24cf9ec668e37685956edef7e1ac0b56db060e"
       def install
         bin.install "mcp-trino"
       end
