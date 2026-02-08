@@ -11,7 +11,7 @@ class McpDataPlatform < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/txn2/mcp-data-platform/releases/download/v0.14.0/mcp-data-platform_0.14.0_darwin_amd64.tar.gz"
-      sha256 "eedd529798292fde76223c51faa951662a5df202c2595432b697ce498c2139aa"
+      sha256 "6b62735b13ee65acdadf134d96f45a006b25a0a49dd91f2040558eeae8639c56"
 
       def install
         bin.install "mcp-data-platform"
@@ -19,7 +19,7 @@ class McpDataPlatform < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/txn2/mcp-data-platform/releases/download/v0.14.0/mcp-data-platform_0.14.0_darwin_arm64.tar.gz"
-      sha256 "ce6a15c7b6b18f0b09232e71a41e7852e46c334180359c8193ee404968434415"
+      sha256 "51208e0705fa02f4961e9729aa5034b93f24d6d1335c8b3cb2301aa2602cb8ee"
 
       def install
         bin.install "mcp-data-platform"
@@ -30,14 +30,14 @@ class McpDataPlatform < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/txn2/mcp-data-platform/releases/download/v0.14.0/mcp-data-platform_0.14.0_linux_amd64.tar.gz"
-      sha256 "2064610b2946269a6596d960a45722b8959bb35afad5e419f8d7adb3bf72b2e6"
+      sha256 "2ff56f737f4f7bf6db38570ef40ebaad51ea5ae7a311e92c4e93a2b01f5af198"
       def install
         bin.install "mcp-data-platform"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/txn2/mcp-data-platform/releases/download/v0.14.0/mcp-data-platform_0.14.0_linux_arm64.tar.gz"
-      sha256 "b7847f4661524cbaf65c7ff6156bc3718b5bbfaa44873c2c933c8567bf5ffd1c"
+      sha256 "de90646b58a95b7c0f8ab774654695b54f047eb61be8a95638ea6f7c5a4fcd7e"
       def install
         bin.install "mcp-data-platform"
       end
