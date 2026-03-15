@@ -5,21 +5,21 @@
 class McpDatahub < Formula
   desc "MCP server for DataHub data catalogs"
   homepage "https://github.com/txn2/mcp-datahub"
-  version "1.3.0"
+  version "1.4.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/txn2/mcp-datahub/releases/download/v1.3.0/mcp-datahub_1.3.0_darwin_amd64.tar.gz"
-      sha256 "57f5f6245fabef123163de95e8f77d8e5b14b26bfa50c2724dd0c82c694222e7"
+      url "https://github.com/txn2/mcp-datahub/releases/download/v1.4.0/mcp-datahub_1.4.0_darwin_amd64.tar.gz"
+      sha256 "81c716e1448cf04c18bfa340885fee1f64bb1898a3da84bab3f0b1cf24fb80b2"
 
       def install
         bin.install "mcp-datahub"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/txn2/mcp-datahub/releases/download/v1.3.0/mcp-datahub_1.3.0_darwin_arm64.tar.gz"
-      sha256 "2f9d35fdd584e9f0b66a17564118128dff13631809ee6b55d0f740577dc14cc7"
+      url "https://github.com/txn2/mcp-datahub/releases/download/v1.4.0/mcp-datahub_1.4.0_darwin_arm64.tar.gz"
+      sha256 "edd827a11e6a0bd6700ddb7b08aa389ff533071bec67d7c2f3778e6a7dd6f9a4"
 
       def install
         bin.install "mcp-datahub"
@@ -29,15 +29,15 @@ class McpDatahub < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/txn2/mcp-datahub/releases/download/v1.3.0/mcp-datahub_1.3.0_linux_amd64.tar.gz"
-      sha256 "fa3569193a2a0d664ef8547801ef5c9c1227c380f7a0ecd2d9207394220fcb1e"
+      url "https://github.com/txn2/mcp-datahub/releases/download/v1.4.0/mcp-datahub_1.4.0_linux_amd64.tar.gz"
+      sha256 "52a052d86d9c9a0150c9775fe07483795ad6e8067af152de2caff89e0578ffac"
       def install
         bin.install "mcp-datahub"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/txn2/mcp-datahub/releases/download/v1.3.0/mcp-datahub_1.3.0_linux_arm64.tar.gz"
-      sha256 "aac45fe1e89a8fde885b4d814459dab4317116780583e664607cd3848bd96307"
+      url "https://github.com/txn2/mcp-datahub/releases/download/v1.4.0/mcp-datahub_1.4.0_linux_arm64.tar.gz"
+      sha256 "0350a028211c5a421639aee9b22b7cff910829bf78c0a4fa08cbd8b2c91a330b"
       def install
         bin.install "mcp-datahub"
       end
