@@ -5,21 +5,21 @@
 class McpDataPlatform < Formula
   desc "Semantic data platform MCP server with bidirectional cross-injection"
   homepage "https://github.com/txn2/mcp-data-platform"
-  version "1.58.2"
+  version "1.58.3"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/txn2/mcp-data-platform/releases/download/v1.58.2/mcp-data-platform_1.58.2_darwin_amd64.tar.gz"
-      sha256 "5e54f4cc8262bdec7dcc1d84c50dcac53fc0bf61164224aa2deb35b38f10b8ea"
+      url "https://github.com/txn2/mcp-data-platform/releases/download/v1.58.3/mcp-data-platform_1.58.3_darwin_amd64.tar.gz"
+      sha256 "45b5be66d235408edd2ad2be071d74f85d8b89370881ae8ca70454384982515e"
 
       def install
         bin.install "mcp-data-platform"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/txn2/mcp-data-platform/releases/download/v1.58.2/mcp-data-platform_1.58.2_darwin_arm64.tar.gz"
-      sha256 "02fe58a5d89fa0330777e511d8c9f55108fe161495b1ca35853f6eb718bcb032"
+      url "https://github.com/txn2/mcp-data-platform/releases/download/v1.58.3/mcp-data-platform_1.58.3_darwin_arm64.tar.gz"
+      sha256 "35a54758cf272122cb472ff2bbe97c07770efe3283891c63cdd9ec78c3349680"
 
       def install
         bin.install "mcp-data-platform"
@@ -29,15 +29,15 @@ class McpDataPlatform < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/txn2/mcp-data-platform/releases/download/v1.58.2/mcp-data-platform_1.58.2_linux_amd64.tar.gz"
-      sha256 "826fad39c5aaa47d553b8ede7f8f59c4cb4c39ebfd17f6448967e65bf7dd3274"
+      url "https://github.com/txn2/mcp-data-platform/releases/download/v1.58.3/mcp-data-platform_1.58.3_linux_amd64.tar.gz"
+      sha256 "675e957e7b9c88b2c381f1e584dd3032c48949b9c59aa183f65eb3de0c5a3915"
       def install
         bin.install "mcp-data-platform"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/txn2/mcp-data-platform/releases/download/v1.58.2/mcp-data-platform_1.58.2_linux_arm64.tar.gz"
-      sha256 "a1bada2aba32f32765feb522a8bd4407731d992f25bd16e394d3de6c34d9db08"
+      url "https://github.com/txn2/mcp-data-platform/releases/download/v1.58.3/mcp-data-platform_1.58.3_linux_arm64.tar.gz"
+      sha256 "590664f38adc6f3599cfd683f88946f712efff1015842cee689f6809ee607136"
       def install
         bin.install "mcp-data-platform"
       end
