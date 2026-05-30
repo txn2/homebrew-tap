@@ -5,23 +5,23 @@
 class Txeh < Formula
   desc "Etc Hosts Management Utility."
   homepage "https://github.com/txn2/txeh"
-  version "1.8.0"
+  version "1.8.1"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/txn2/txeh/releases/download/v1.8.0/txeh_Darwin_x86_64.tar.gz"
-      sha256 "3dc24ee3ce68d841d22d372e5f0c0a1bf58741dfad2866a82c1292b77cb2d587"
+      url "https://github.com/txn2/txeh/releases/download/v1.8.1/txeh_Darwin_x86_64.tar.gz"
+      sha256 "ea993b8bbec83746077c13a322e4a6161cd415a40614f51a5eda0ed2f1f5e9f8"
 
-      def install
+      define_method(:install) do
         bin.install "txeh"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/txn2/txeh/releases/download/v1.8.0/txeh_Darwin_arm64.tar.gz"
-      sha256 "dd9c4f72fe33df0eb687dd716fbce7ded267dd3774d29b89b4f2324cdbe12b2a"
+      url "https://github.com/txn2/txeh/releases/download/v1.8.1/txeh_Darwin_arm64.tar.gz"
+      sha256 "816d35f8445dfeacf6fa4aea0b28ca75e563bcdfa46b73e8b299372a281788c4"
 
-      def install
+      define_method(:install) do
         bin.install "txeh"
       end
     end
@@ -29,23 +29,23 @@ class Txeh < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/txn2/txeh/releases/download/v1.8.0/txeh_Linux_x86_64.tar.gz"
-      sha256 "bbc02d5c7b3fcf49fa608ad0c52b91b974232030036acb09af960c1e36c38ec8"
-      def install
+      url "https://github.com/txn2/txeh/releases/download/v1.8.1/txeh_Linux_x86_64.tar.gz"
+      sha256 "b568f0ecc403b75730c83ecbed33c779a0b088d25ef3871149ce8588cd1a0d58"
+      define_method(:install) do
         bin.install "txeh"
       end
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/txn2/txeh/releases/download/v1.8.0/txeh_Linux_armv6.tar.gz"
-      sha256 "b0761c07b0f92e6cc8c81a349176face4038e52a22151710b9dbd40a20dfbca6"
-      def install
+      url "https://github.com/txn2/txeh/releases/download/v1.8.1/txeh_Linux_armv6.tar.gz"
+      sha256 "1dfb448553d8a2ce18aea1e65a37985a23e79aa969d0d12f4669d76f9ddf75b8"
+      define_method(:install) do
         bin.install "txeh"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/txn2/txeh/releases/download/v1.8.0/txeh_Linux_arm64.tar.gz"
-      sha256 "3f0e4ced8a3e7ee269cde94b617245846d5c955633bfa850b4323c17e35f1cf9"
-      def install
+      url "https://github.com/txn2/txeh/releases/download/v1.8.1/txeh_Linux_arm64.tar.gz"
+      sha256 "25272154398b3cc48953f27192bc56aea416df8fb62add3d7ea2d6c65f603d38"
+      define_method(:install) do
         bin.install "txeh"
       end
     end
