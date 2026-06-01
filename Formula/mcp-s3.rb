@@ -5,21 +5,21 @@
 class McpS3 < Formula
   desc "MCP server for Amazon S3 and S3-compatible storage"
   homepage "https://github.com/txn2/mcp-s3"
-  version "1.1.0"
+  version "1.2.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/txn2/mcp-s3/releases/download/v1.1.0/mcp-s3_1.1.0_darwin_amd64.tar.gz"
-      sha256 "bb00f6f55616d936b306ba4d6f62f7de563889d5cb2dc64e38574bcf088631d4"
+      url "https://github.com/txn2/mcp-s3/releases/download/v1.2.0/mcp-s3_1.2.0_darwin_amd64.tar.gz"
+      sha256 "08f1d76b20b2b2ffba93404e58464a414555370117eb44dc1934bf2f76fb6088"
 
       def install
         bin.install "mcp-s3"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/txn2/mcp-s3/releases/download/v1.1.0/mcp-s3_1.1.0_darwin_arm64.tar.gz"
-      sha256 "d91f1bba7663c866574c9001d08a96b12282e6897b39db0d1c380c84da5e650f"
+      url "https://github.com/txn2/mcp-s3/releases/download/v1.2.0/mcp-s3_1.2.0_darwin_arm64.tar.gz"
+      sha256 "f5ff5d89183dca990a0bcc305ce683d9bc2485b7f96c3a011de04510a1528e5e"
 
       def install
         bin.install "mcp-s3"
@@ -29,15 +29,15 @@ class McpS3 < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/txn2/mcp-s3/releases/download/v1.1.0/mcp-s3_1.1.0_linux_amd64.tar.gz"
-      sha256 "4540e0157fe5dcb669be964ed2a5a80bf4e7743cab4370e6db7232e50528e921"
+      url "https://github.com/txn2/mcp-s3/releases/download/v1.2.0/mcp-s3_1.2.0_linux_amd64.tar.gz"
+      sha256 "5d8dc550bfe02d19b090abeb551afed822cec16b18c779f088e14eed0974fcee"
       def install
         bin.install "mcp-s3"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/txn2/mcp-s3/releases/download/v1.1.0/mcp-s3_1.1.0_linux_arm64.tar.gz"
-      sha256 "d8496ecd03fc89b98cb6775f0c61e5b7d8f9742a0016755c6e835cb0652539c0"
+      url "https://github.com/txn2/mcp-s3/releases/download/v1.2.0/mcp-s3_1.2.0_linux_arm64.tar.gz"
+      sha256 "711e13ec5d9b78136fe88613d06d6bda69216596ec45fe4c2786ab4fc930e719"
       def install
         bin.install "mcp-s3"
       end
