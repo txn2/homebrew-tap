@@ -5,21 +5,21 @@
 class McpTrino < Formula
   desc "MCP server for Trino data warehouses"
   homepage "https://github.com/txn2/mcp-trino"
-  version "1.6.0"
+  version "1.7.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/txn2/mcp-trino/releases/download/v1.6.0/mcp-trino_1.6.0_darwin_amd64.tar.gz"
-      sha256 "2d2a7c55edd2a17c843343f45c24230c8581da2478c6dbb6d4369e0864034707"
+      url "https://github.com/txn2/mcp-trino/releases/download/v1.7.0/mcp-trino_1.7.0_darwin_amd64.tar.gz"
+      sha256 "8c03771132a9ee25475f0e965ab7a6aaa8e169d28ac6e5a40f549fd4e50552d8"
 
       def install
         bin.install "mcp-trino"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/txn2/mcp-trino/releases/download/v1.6.0/mcp-trino_1.6.0_darwin_arm64.tar.gz"
-      sha256 "6936df00154cc3a98c47887d7195833aed8bc2fa38c87ba03d1e484df7baf192"
+      url "https://github.com/txn2/mcp-trino/releases/download/v1.7.0/mcp-trino_1.7.0_darwin_arm64.tar.gz"
+      sha256 "96fde243d77273fec1f768508954ffa09ae8da10b046cee680c023b2e6acb7e4"
 
       def install
         bin.install "mcp-trino"
@@ -29,15 +29,15 @@ class McpTrino < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/txn2/mcp-trino/releases/download/v1.6.0/mcp-trino_1.6.0_linux_amd64.tar.gz"
-      sha256 "69b2a312961eb7d7394e00cd9af79792e6535c727083ea72de39e7959086af8b"
+      url "https://github.com/txn2/mcp-trino/releases/download/v1.7.0/mcp-trino_1.7.0_linux_amd64.tar.gz"
+      sha256 "b55584cf2d6ca90247a216331d5cc5fac74a01ec7a6a48e52c6098bccf84dc6c"
       def install
         bin.install "mcp-trino"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/txn2/mcp-trino/releases/download/v1.6.0/mcp-trino_1.6.0_linux_arm64.tar.gz"
-      sha256 "c3b91bc75a4a56249c786b5e1511cad9d0f1c456982c4a7f73e15ec62a2ceb50"
+      url "https://github.com/txn2/mcp-trino/releases/download/v1.7.0/mcp-trino_1.7.0_linux_arm64.tar.gz"
+      sha256 "3b43c6cf7bde3589c6d4bcfcca5b23792c5f4226a54db9d6d761be3260022cb1"
       def install
         bin.install "mcp-trino"
       end
