@@ -5,23 +5,23 @@
 class Kubefwd < Formula
   desc "Kubernetes bulk port forwarding utility."
   homepage "https://kubefwd.com"
-  version "1.25.16"
+  version "1.25.17"
   license "Apache-2.0"
 
   depends_on "kubectl" => :optional
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/txn2/kubefwd/releases/download/v1.25.16/kubefwd_Darwin_x86_64.tar.gz"
-      sha256 "905a3dd8a70d5acfcfe2a03f41feec264ac0c11cf7e5633b489716d719b64a6b"
+      url "https://github.com/txn2/kubefwd/releases/download/v1.25.17/kubefwd_Darwin_x86_64.tar.gz"
+      sha256 "26fadc4265b2e713e2f1da0c130411836e8cee5296f0fa3519cd5c13bea11d1d"
 
       def install
         bin.install "kubefwd"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/txn2/kubefwd/releases/download/v1.25.16/kubefwd_Darwin_arm64.tar.gz"
-      sha256 "fc7a0126559cdd9e5cf8ddaf6a271b2d06381787bc3d3005ae48739a88f7d56c"
+      url "https://github.com/txn2/kubefwd/releases/download/v1.25.17/kubefwd_Darwin_arm64.tar.gz"
+      sha256 "f7fe94f3d18606f87e691065b1b3c89710a1ff99b757ec5f7c908c8576a7031f"
 
       def install
         bin.install "kubefwd"
@@ -31,22 +31,22 @@ class Kubefwd < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/txn2/kubefwd/releases/download/v1.25.16/kubefwd_Linux_x86_64.tar.gz"
-      sha256 "07275cad05b2427069071160125b8cb29e94dd44582f685ce6d966fa9e7fb7d7"
+      url "https://github.com/txn2/kubefwd/releases/download/v1.25.17/kubefwd_Linux_x86_64.tar.gz"
+      sha256 "f9a2986f26d219713429477511f5f570df12c811e0f79d42b244569746e8eba1"
       def install
         bin.install "kubefwd"
       end
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/txn2/kubefwd/releases/download/v1.25.16/kubefwd_Linux_armv6.tar.gz"
-      sha256 "f552921ff2b56f34a0c8bf4c14633859544e929ad80e11c3a23109d0e0c702c9"
+      url "https://github.com/txn2/kubefwd/releases/download/v1.25.17/kubefwd_Linux_armv6.tar.gz"
+      sha256 "39d3220ccccf1fd76c204038553851fa88db7dc70356c93bcae1dedaac827a2e"
       def install
         bin.install "kubefwd"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/txn2/kubefwd/releases/download/v1.25.16/kubefwd_Linux_arm64.tar.gz"
-      sha256 "e01ade02d919be2c7e306543f0a65de2e629c254ef16b51ecb45830b0044a3e8"
+      url "https://github.com/txn2/kubefwd/releases/download/v1.25.17/kubefwd_Linux_arm64.tar.gz"
+      sha256 "f33acda505e26967b8d262019612bafff990c7bdbeb7bdc481a4bf28b88da35c"
       def install
         bin.install "kubefwd"
       end
